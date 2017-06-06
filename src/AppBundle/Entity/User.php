@@ -33,4 +33,10 @@ class User extends BaseUser {
   public function setFirstName($firstName){
     $this->firstName = $firstName;  
   }
+  
+  public function setEmail($email){
+    $this->setUsername($email);
+    
+    return parent::setEmail($email);
+  }
 }
