@@ -25,6 +25,9 @@ security:
 
       form_login: 
         csrf_token_generator: security.csrf.token_manager
+        
+      remember_me:
+        secret: '%secret%'
       # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
 
   access_control:
